@@ -38,8 +38,12 @@ function crearGaleria(){
 
 function mostrarImagen(i){
     const imagen = document.createElement('IMG')
+    imagen.loading = 'lazy'
+    imagen.width = '300'
+    imagen.heigth = '200'
     imagen.src = `src/img/gallery/full/${i}.jpg`
     imagen.alt = 'Imagen Galeria'
+    
 
     //Generar Modal
     const modal = document.createElement('DIV')
